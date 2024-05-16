@@ -43,10 +43,10 @@ int main(){
     v1.pop_back();
     
     
-    for(int i =0; i < v1.size(); i++){
+    for(int i =0; i < v1.size(); i++){   
         cout << v1[i] << " ";
     }
-    cout << endl;
+    cout << endl  ;
 
 
 
