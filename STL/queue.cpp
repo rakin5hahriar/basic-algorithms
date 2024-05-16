@@ -13,6 +13,7 @@ int main(){
 
     cout << q.empty() << endl;
     cout << q.size() << endl;
+    q.pop();
     cout << q.front() << endl;
     
 
