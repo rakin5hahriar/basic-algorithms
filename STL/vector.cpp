@@ -55,7 +55,7 @@ int main(){
     // }
     // cout << endl;
 
-    //adding element in vector
+    // //adding element in vector
     vector<int> v3;
     v3.push_back(100);
     v3.push_back(200);
@@ -64,11 +64,18 @@ int main(){
     vector<int>:: iterator it1= v3.begin()+1;
     v3.insert(it1, v2.begin(), v2.begin()+2);
 
+    // for(int i =0; i < v3.size(); i++){   
+    //     cout << v3[i] << " ";
+    // }
+    // cout << endl ;
+
+    // erase from any where to any where
+    v3.erase(v3.begin()+2);
+    
     for(int i =0; i < v3.size(); i++){   
         cout << v3[i] << " ";
     }
     cout << endl ;
-    
 
 
     return 0;
