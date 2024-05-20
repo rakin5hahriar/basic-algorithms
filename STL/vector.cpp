@@ -48,13 +48,27 @@ int main(){
     // }
     // cout << endl ;
 
-    // using alternate way to print: iterate using pointer
-    vector<int> :: iterator it;
-    for(it = v2.begin(); it!=v2.end(); it++){
-        cout<< *it << " ";
-    }
-    cout << endl;
+    // // using alternate way to print: iterate using pointer
+    // vector<int> :: iterator it;
+    // for(it = v2.begin(); it!=v2.end(); it++){
+    //     cout<< *it << " ";
+    // }
+    // cout << endl;
 
+    //adding element in vector
+    vector<int> v3;
+    v3.push_back(100);
+    v3.push_back(200);
+    v3.push_back(300);
+
+    vector<int>:: iterator it1= v3.begin()+1;
+    v3.insert(it1, v2.begin(), v2.begin()+2);
+
+    for(int i =0; i < v3.size(); i++){   
+        cout << v3[i] << " ";
+    }
+    cout << endl ;
+    
 
 
     return 0;
